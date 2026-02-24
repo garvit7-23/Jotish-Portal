@@ -39,7 +39,7 @@ export default function LoginPage() {
         <img src="/logo.png" className="w-16 mx-auto mb-3 drop-shadow" />
 
         <h1 className="text-2xl font-bold text-gray-800 mb-1">
-          Astrology Portal
+          Jotish Portal
         </h1>
 
         <p className="text-sm text-gray-500 mb-6">

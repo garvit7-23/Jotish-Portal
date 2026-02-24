@@ -48,7 +48,7 @@ export default function Navbar() {
         >
           <img src="/logo.png" className="w-9 drop-shadow-sm" />
           <p className="font-semibold text-gray-800 tracking-wide">
-            Astrology Portal
+            Jotish Portal
           </p>
         </div>
 
