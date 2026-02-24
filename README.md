@@ -97,3 +97,7 @@ The goal of this submission was to demonstrate:
 -   architectural awareness\
 -   handling SSR challenges\
 -   building resilient frontend experiences
+
+## 🌐 Live Demo
+
+[🚀 View Live Application](https://jotish-portal.vercel.app)
