@@ -14,9 +14,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Astrology Portal",
-  description: "Assignment App",
+  description: "Astrologer discovery platform with insights and AI analysis",
+  openGraph: {
+    title: "Astrology Portal",
+    description: "Discover astrologers, insights and cosmic guidance",
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Astrology Portal",
+    description: "Discover astrologers and AI-powered insights",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({
