@@ -7,17 +7,18 @@ export default function LoginPage() {
   const router = useRouter();
   const [u, setU] = useState("");
   const [p, setP] = useState("");
-  const [e, setE] = useState("");
+  const [error, setError] = useState("");
 
   const login = () => {
-  if (u === "testuser" && p === "Test123") {
-  localStorage.setItem("loggedIn", "true");      // ⭐ REAL AUTH
-  localStorage.setItem("justLoggedIn", "true");  // ⭐ popup trigger
-  router.push("/list");
-  } else {
-  setError("Invalid credentials"); 
-  }
-  };
+     if (u === "testuser" && p === "Test123") {
+       setError(""); // ⭐ clear previous error
+       localStorage.setItem("loggedIn", "true");
+       localStorage.setItem("justLoggedIn", "true");
+       router.push("/list");
+     } else {
+       setError("Invalid credentials");
+     }
+   };
 
 
   return (
@@ -61,7 +62,11 @@ export default function LoginPage() {
           onChange={(e) => setP(e.target.value)}
         />
 
-        {e && <p className="text-red-500 text-sm mb-2">{e}</p>}
+        {error && (
+          <p className="text-red-500 text-sm text-center mt-2">
+            {error}
+          </p>
+        )}
 
         <button
           onClick={login}
